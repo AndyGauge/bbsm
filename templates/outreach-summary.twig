@@ -1,0 +1,29 @@
+{% extends 'partial/base.html' %}
+
+{% block title %}Outreach{% endblock %}
+
+{% block content %}
+
+{% if entry is defined %}
+	<h3>Outreach
+		<small class="text-muted">{{ entry["outreachSummaryTitle"] }}</small>
+	</h3>
+		{% for link in entry["outreachLink"].all() %}
+		{% if loop.index is odd	%}<div class="row">{% endif %}
+			<div class="col-sm-6">
+			<div class="summary_border">
+			{% for detail in link["outreachLink"] %}
+				<a href="{{ detail.getUrl() }}">
+			<p class="summary_title">	{{ detail["outreachTitle"] }}</p>
+			{% endfor %}
+			{% for picture in link["outreachLinkPicture"] %}
+				<img src="{{ picture.getUrl("halfThumb") }}" class="img-fluid" />
+			{%endfor %}
+			<p class="summary_caption"> {{ link["outreachLinkComment"] }}</p>	
+			</a>
+			</div></div>
+		{% if loop.index is even %}</div>{% endif %}
+		{% endfor %}
+{% endif %}
+
+{% endblock %}

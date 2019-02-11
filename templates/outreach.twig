@@ -1,0 +1,25 @@
+{% extends 'partial/base.html' %}
+
+{% block title %}Outreach{% endblock %}
+
+{% block content %}
+
+{% if entry is defined %}
+	<h3>Outreach
+		<small class="text-muted">{{ entry["outreachTitle"] }}</small>
+	</h3>
+	<p>{{ entry["outreachLead"] }}</p>
+	{% for block in entry["outreachBlocks"] %}
+		<div class="thumbnail">
+		<ul class="list-unstyled">
+			{% for image in block["picture"].all() %}
+				<li><img src="{{ image.getUrl("post") }}" class="img-fluid" /></li>
+			{% endfor %}
+		</ul>
+		<div class="caption">{{ block["caption"] }}</div>
+		</div>
+	{% endfor %}
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'partial/base.html' %}
+
+
+{% block title %}Bio{% endblock %}
+
+{% block content %}
+
+	<h3>Who is Be Bold Street Ministries?
+	</h3>
+	{% for bio in entry["bios"].all() %}
+		{% if loop.index is odd %}
+			<div class="row">
+		{% endif %}
+		<div class="col-sm-6" >
+		<span class="bio-top">
+		<h4 class=>{{ bio["fullName"] }}</h4>
+		<p class="lead">{{ bio["position"] }}</p>
+		</span>
+		<img src="{{ bio["bioPicture"].one().getUrl("bio") }}" class="img-fluid rounded-circle img-center" />
+		<p>{{ bio["testimony"] }}</p>
+		<p>{{ bio["email"] }}</p>
+		<p>{{ bio["telephone"] }}</p>
+		</div>
+		{% if loop.index is even %}
+			</div>
+		{% endif %}
+	{% endfor %}
+{% endblock %}

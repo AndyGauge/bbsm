@@ -1,0 +1,20 @@
+{% extends 'partial/base.html' %}
+
+{% set searchFor = craft.request.getParam('q') %}
+{% set results = craft.entries().search(searchFor).all() %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+
+	<h3>Results
+		<small class="text-muted">for {{ searchFor }}</small>
+	</h3>
+	{% for result in results %}
+		<div class="row"><div class="col-sm-6">
+			<a href="{{ result.getUrl() }}">{{ result["title"] }}</a>
+		</div></div>
+	{% endfor %}
+
+
+{% endblock %}
