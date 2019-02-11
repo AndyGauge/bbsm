@@ -1,0 +1,991 @@
+dateModified: 1549841926
+email:
+  fromEmail: andrew@beboldstreetministries.org
+  fromName: beta.beboldstreetministries.org
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  233863fc-8aff-472a-b7e8-06e8ef1c4930:
+    name: 'outreach header'
+  53fd457b-32fd-4bb8-b62a-291a205b9a0e:
+    name: Common
+  66942d7d-8c9e-4fa9-9af1-73379637c44f:
+    name: bios
+  75f638dc-495a-4bb7-9718-134ab6290a33:
+    name: 'outreach detail'
+  91af78ba-44d6-44d9-abec-7ae0f903a9e4:
+    name: 'outreach summary'
+  c4a44a80-5fb9-4285-9e9c-2cfde0f3e2d6:
+    name: bio
+  fd9a4081-45dc-4eea-b79a-6d471bc16b9d:
+    name: navigation
+fields:
+  14cae3f1-5671-4f19-afd3-8c0d1c2d250e:
+    contentColumnType: string
+    fieldGroup: 2c26e0f4-d11e-426a-b11d-b83550cab732
+    handle: outreachPicture2
+    instructions: ''
+    name: 'outreach picture2'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+      defaultUploadLocationSubpath: media/outreach
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  231326ba-e25a-459b-bc3e-082abc553a95:
+    contentColumnType: string
+    fieldGroup: 91af78ba-44d6-44d9-abec-7ae0f903a9e4
+    handle: outreachLink
+    instructions: ''
+    name: 'Outreach Link'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_outreachlink}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  26c897de-b9b3-4a0f-a5c4-165c157c749a:
+    contentColumnType: text
+    fieldGroup: 66942d7d-8c9e-4fa9-9af1-73379637c44f
+    handle: position
+    instructions: ''
+    name: Position
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  3606c93b-1be4-454f-a278-1fa13ec55bb2:
+    contentColumnType: text
+    fieldGroup: 233863fc-8aff-472a-b7e8-06e8ef1c4930
+    handle: outreachLead
+    instructions: ''
+    name: 'outreach lead'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  4c003cb1-e3a3-4052-8dd8-960fd1af448f:
+    contentColumnType: text
+    fieldGroup: 233863fc-8aff-472a-b7e8-06e8ef1c4930
+    handle: outreachTitle
+    instructions: ''
+    name: 'outreach title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  60cc3c9c-8876-45b3-8f53-7f0b23a1bd40:
+    contentColumnType: string
+    fieldGroup: 66942d7d-8c9e-4fa9-9af1-73379637c44f
+    handle: bioPicture
+    instructions: ''
+    name: 'Bio Picture'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  64f20a50-895d-47a0-a3a1-3b8a82e41da8:
+    contentColumnType: text
+    fieldGroup: 66942d7d-8c9e-4fa9-9af1-73379637c44f
+    handle: telephone
+    instructions: ''
+    name: Telephone
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  6804e28d-6c46-4fa0-9472-2fca77c65baf:
+    contentColumnType: text
+    fieldGroup: 34bde7a9-1b8e-4489-9c62-75828fa61a22
+    handle: outreachHeaderMarkup
+    instructions: 'This is the field that introduces our outreach'
+    name: 'outreach header markup'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  87bd970a-293e-485f-8040-245e5bae9940:
+    contentColumnType: text
+    fieldGroup: 66942d7d-8c9e-4fa9-9af1-73379637c44f
+    handle: testimony
+    instructions: ''
+    name: testimony
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9f54c0b0-a12a-4f1a-8838-56b3adc5123a:
+    contentColumnType: text
+    fieldGroup: 91af78ba-44d6-44d9-abec-7ae0f903a9e4
+    handle: outreachSummaryTitle
+    instructions: ''
+    name: 'Outreach Summary Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b46f775d-7241-486d-95bf-0fe901ddae36:
+    contentColumnType: string
+    fieldGroup: 66942d7d-8c9e-4fa9-9af1-73379637c44f
+    handle: email
+    instructions: ''
+    name: email
+    searchable: true
+    settings:
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Email
+  c1c1b3dc-ab83-4c46-abae-69bd5214a247:
+    contentColumnType: string
+    fieldGroup: 34bde7a9-1b8e-4489-9c62-75828fa61a22
+    handle: outreachBanner
+    instructions: ''
+    name: 'outreach banner'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  c28563b3-6957-448c-9837-937aca6c98a6:
+    contentColumnType: text
+    fieldGroup: 66942d7d-8c9e-4fa9-9af1-73379637c44f
+    handle: fullName
+    instructions: ''
+    name: 'Full Name'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c93f828b-856e-4ac4-a438-fcd17567dfc8:
+    contentColumnType: string
+    fieldGroup: 2c26e0f4-d11e-426a-b11d-b83550cab732
+    handle: outreachPicture1
+    instructions: 'Top most picture'
+    name: 'outreach picture1'
+    searchable: false
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+      defaultUploadLocationSubpath: media/outreach
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d3618e4e-afc1-4107-bdc4-553ed5e58e2e:
+    contentColumnType: text
+    fieldGroup: 2c26e0f4-d11e-426a-b11d-b83550cab732
+    handle: outreachCaption1
+    instructions: ''
+    name: 'outreach caption1'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e0731c3c-ac56-4d5e-8556-713cbc5ff7a0:
+    contentColumnType: string
+    fieldGroup: c4a44a80-5fb9-4285-9e9c-2cfde0f3e2d6
+    handle: bios
+    instructions: ''
+    name: bios
+    searchable: true
+    settings:
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  eb51a21e-1ae4-46b0-a763-b2ef2213db59:
+    contentColumnType: string
+    fieldGroup: fd9a4081-45dc-4eea-b79a-6d471bc16b9d
+    handle: menuItem
+    instructions: ''
+    name: 'Menu Item'
+    searchable: true
+    settings:
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  fbb58031-67fc-465f-9882-c2fd092b502f:
+    contentColumnType: text
+    fieldGroup: 2c26e0f4-d11e-426a-b11d-b83550cab732
+    handle: outreachCaption2
+    instructions: ''
+    name: 'outreach caption2'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fbe2099c-666b-44e4-b995-e8238ef576e0:
+    contentColumnType: string
+    fieldGroup: 75f638dc-495a-4bb7-9718-134ab6290a33
+    handle: outreachBlocks
+    instructions: ''
+    name: 'outreach blocks'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_outreachblocks}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  fd387011-8eb7-4826-bda4-6daef9933273:
+    contentColumnType: text
+    fieldGroup: 34bde7a9-1b8e-4489-9c62-75828fa61a22
+    handle: outreachHeaderTitle
+    instructions: ''
+    name: 'outreach header title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+imageTransforms:
+  3e22e4e1-7ca7-4a83-aa37-9fbcc9c34405:
+    format: null
+    handle: post
+    height: '800'
+    interlace: none
+    mode: crop
+    name: post
+    position: top-center
+    quality: null
+    width: '1280'
+  b39081dc-dcd9-4eb5-87ba-9e55a9072440:
+    format: png
+    handle: cropBanner
+    height: '200'
+    interlace: none
+    mode: crop
+    name: 'Crop banner'
+    position: center-center
+    quality: null
+    width: '400'
+  d27f087b-3eb3-4ffd-bb4f-667b11e0805b:
+    format: null
+    handle: halfThumb
+    height: '440'
+    interlace: none
+    mode: crop
+    name: 'half thumb'
+    position: center-center
+    quality: null
+    width: '610'
+  ff7c2ebd-9f02-45ca-af45-55d680aba03b:
+    format: null
+    handle: bio
+    height: '380'
+    interlace: none
+    mode: stretch
+    name: bio
+    position: center-center
+    quality: null
+    width: '310'
+matrixBlockTypes:
+  7c5fbcf3-57a6-4ec0-b6fb-acdd3534f537:
+    field: fbe2099c-666b-44e4-b995-e8238ef576e0
+    fieldLayouts:
+      38deef6b-667f-4dbf-a114-4f27df93bf12:
+        tabs:
+          -
+            fields:
+              1e389db8-2fee-493a-ab1d-174cb8b74798:
+                required: false
+                sortOrder: 1
+              8fc7da08-9542-4222-a92c-b677e929523d:
+                required: false
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      1e389db8-2fee-493a-ab1d-174cb8b74798:
+        contentColumnType: string
+        fieldGroup: null
+        handle: picture
+        instructions: ''
+        name: picture
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+          defaultUploadLocationSubpath: media
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      8fc7da08-9542-4222-a92c-b677e929523d:
+        contentColumnType: text
+        fieldGroup: null
+        handle: caption
+        instructions: ''
+        name: caption
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: pictureAndCaption
+    name: 'picture and caption'
+    sortOrder: 1
+  96dba5f5-ac27-4865-9b1b-c23d4a93c77f:
+    field: 231326ba-e25a-459b-bc3e-082abc553a95
+    fieldLayouts:
+      63eb4650-abb4-4c4e-80a8-679f1f1a99c2:
+        tabs:
+          -
+            fields:
+              0bac8a89-6260-417c-ab77-fc5594b58c06:
+                required: false
+                sortOrder: 2
+              2b89f210-d57f-468e-ab04-695b8e68ac60:
+                required: false
+                sortOrder: 1
+              6bf9f1c4-99ae-44d2-be2e-416313407518:
+                required: false
+                sortOrder: 3
+            name: Content
+            sortOrder: 1
+    fields:
+      0bac8a89-6260-417c-ab77-fc5594b58c06:
+        contentColumnType: string
+        fieldGroup: null
+        handle: outreachLinkPicture
+        instructions: ''
+        name: 'Outreach Link Picture'
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+          defaultUploadLocationSubpath: media
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:b85ce3f8-c917-456b-8e2d-634485951590'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      2b89f210-d57f-468e-ab04-695b8e68ac60:
+        contentColumnType: string
+        fieldGroup: null
+        handle: outreachLink
+        instructions: ''
+        name: 'Outreach Link'
+        searchable: true
+        settings:
+          limit: ''
+          localizeRelations: false
+          selectionLabel: ''
+          source: null
+          sources:
+            - 'section:96761a32-5615-4bcb-b602-72fa624b552e'
+            - 'section:bfa4aa69-0326-4b03-b941-1221b3150f7b'
+          targetSiteId: null
+          viewMode: null
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Entries
+      6bf9f1c4-99ae-44d2-be2e-416313407518:
+        contentColumnType: text
+        fieldGroup: null
+        handle: outreachLinkComment
+        instructions: ''
+        name: 'Outreach Link Comment'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: outreachLinksBlock
+    name: 'Outreach Links Block'
+    sortOrder: 1
+routes:
+  0c6adf81-7343-469a-b5bb-dfc5ae3c34f8:
+    siteUid: null
+    sortOrder: 1
+    template: outreach
+    uriParts:
+      - outreach
+    uriPattern: outreach
+sections:
+  131086e9-1f0a-492e-bbf5-f3e397f4c36f:
+    enableVersioning: true
+    entryTypes:
+      e6ad185d-7638-4241-bdad-840efa1a302c:
+        fieldLayouts:
+          77167b9f-b8d1-4828-a9c2-de155d2f0a9d:
+            tabs:
+              -
+                fields:
+                  e0731c3c-ac56-4d5e-8556-713cbc5ff7a0:
+                    required: false
+                    sortOrder: 1
+                name: bio
+                sortOrder: 1
+        handle: bio
+        hasTitleField: false
+        name: Bio
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: bio
+    name: Bio
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: bio
+        uriFormat: bio
+    type: single
+  25383de1-394d-4e8e-b741-2e084a09af8d:
+    enableVersioning: true
+    entryTypes:
+      0827df1e-6823-4660-a4fa-80845d859eac:
+        handle: giving
+        hasTitleField: false
+        name: 'Monthly Giving'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: giving
+    name: 'Monthly Giving'
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: giving
+        uriFormat: giving
+    type: single
+  436f65bd-e3f6-4860-baa3-cf61605cf269:
+    enableVersioning: true
+    entryTypes:
+      2d32dbed-f317-479f-8ed3-56f19bb91be8:
+        fieldLayouts:
+          6b383b74-9732-4ecc-9e17-8a258768c877:
+            tabs:
+              -
+                fields:
+                  37812868-c084-4443-b3c7-c568d5b70d6f:
+                    required: false
+                    sortOrder: 1
+                name: outreach
+                sortOrder: 1
+        handle: outreach
+        hasTitleField: true
+        name: Outreach
+        sortOrder: 3
+        titleFormat: ''
+        titleLabel: 'Be Bold Street Ministries Outreach'
+      67ee4fb1-e042-459a-95cc-3d20b0ad4227:
+        fieldLayouts:
+          327fd2f3-3019-4de0-b23d-94c55d8c70fc:
+            tabs:
+              -
+                fields:
+                  37812868-c084-4443-b3c7-c568d5b70d6f:
+                    required: false
+                    sortOrder: 1
+                name: outreach
+                sortOrder: 1
+              -
+                fields:
+                  6804e28d-6c46-4fa0-9472-2fca77c65baf:
+                    required: false
+                    sortOrder: 1
+                  fd387011-8eb7-4826-bda4-6daef9933273:
+                    required: false
+                    sortOrder: 2
+                name: outreach-header-group
+                sortOrder: 2
+              -
+                fields:
+                  14cae3f1-5671-4f19-afd3-8c0d1c2d250e:
+                    required: false
+                    sortOrder: 4
+                  c93f828b-856e-4ac4-a438-fcd17567dfc8:
+                    required: false
+                    sortOrder: 3
+                  d3618e4e-afc1-4107-bdc4-553ed5e58e2e:
+                    required: false
+                    sortOrder: 1
+                  fbb58031-67fc-465f-9882-c2fd092b502f:
+                    required: false
+                    sortOrder: 2
+                name: outreach-pictures-and-captions
+                sortOrder: 3
+        handle: outreachPictureAndStory
+        hasTitleField: true
+        name: 'outreach picture and story'
+        sortOrder: 2
+        titleFormat: ''
+        titleLabel: Title
+      ba104eaa-3399-487c-b292-c0a0fb9b19cc:
+        fieldLayouts:
+          5724a73b-08f4-4080-85e9-3acbfed3eb27:
+            tabs:
+              -
+                fields:
+                  6804e28d-6c46-4fa0-9472-2fca77c65baf:
+                    required: false
+                    sortOrder: 1
+                  fd387011-8eb7-4826-bda4-6daef9933273:
+                    required: false
+                    sortOrder: 2
+                name: outreach-header-group
+                sortOrder: 1
+        handle: outreachHeader
+        hasTitleField: true
+        name: 'outreach header'
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: outreach
+    name: Outreach
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: outreach
+        uriFormat: 'outreach/{slug}'
+    type: channel
+  509ffc7f-9482-4314-9605-2f415521daff:
+    enableVersioning: true
+    entryTypes:
+      fda2ceb8-8ca8-4c9c-812d-1034c433e527:
+        handle: calendar
+        hasTitleField: false
+        name: Calendar
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: calendar
+    name: Calendar
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: calendar
+        uriFormat: calendar
+    type: single
+  71a4411f-21d1-4430-a3b1-03b569ab4380:
+    enableVersioning: true
+    entryTypes:
+      7739a87d-9cff-4055-9c2e-b35d9b940f7d:
+        handle: search
+        hasTitleField: false
+        name: Search
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: search
+    name: Search
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: search
+        uriFormat: search
+    type: single
+  89d93eea-0a93-4be8-93da-a121dd3811ee:
+    enableVersioning: true
+    entryTypes:
+      c1809a95-d47a-478b-b93c-917d1e19fa9e:
+        handle: outreachNavigation
+        hasTitleField: false
+        name: 'Outreach Navigation'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: outreachNavigation
+    name: 'Outreach Navigation'
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: navigation
+        uriFormat: outreach-navigation
+    type: single
+  96761a32-5615-4bcb-b602-72fa624b552e:
+    enableVersioning: true
+    entryTypes:
+      9de71597-72a2-411d-aaae-b1e9dfe274e3:
+        fieldLayouts:
+          fa1ee47d-18ac-4cf3-ae5b-7224a04d2ec9:
+            tabs:
+              -
+                fields:
+                  3606c93b-1be4-454f-a278-1fa13ec55bb2:
+                    required: false
+                    sortOrder: 2
+                  4c003cb1-e3a3-4052-8dd8-960fd1af448f:
+                    required: false
+                    sortOrder: 1
+                name: 'outreach header'
+                sortOrder: 1
+              -
+                fields:
+                  fbe2099c-666b-44e4-b995-e8238ef576e0:
+                    required: false
+                    sortOrder: 1
+                name: 'outreach detail'
+                sortOrder: 2
+        handle: outreach
+        hasTitleField: true
+        name: Outreach
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: outreach
+    name: Outreach
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: outreach
+        uriFormat: 'outreach/{slug}'
+    type: channel
+  affe55e0-cbe3-41de-b341-b50f322d4205:
+    enableVersioning: true
+    entryTypes:
+      d88c12b9-47af-4098-bb54-bdb1864826fc:
+        handle: testing
+        hasTitleField: true
+        name: testing
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Title
+    handle: testing
+    name: testing
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'testing/{slug}'
+    type: channel
+  bfa4aa69-0326-4b03-b941-1221b3150f7b:
+    enableVersioning: true
+    entryTypes:
+      7df463b7-4690-4e8e-a262-797c91d0712f:
+        fieldLayouts:
+          a6cad133-76c6-4e0e-9ec8-e8d7f274f5ad:
+            tabs:
+              -
+                fields:
+                  231326ba-e25a-459b-bc3e-082abc553a95:
+                    required: false
+                    sortOrder: 2
+                  9f54c0b0-a12a-4f1a-8838-56b3adc5123a:
+                    required: false
+                    sortOrder: 1
+                name: 'outreach summary'
+                sortOrder: 1
+        handle: outreachSummary
+        hasTitleField: true
+        name: 'Outreach Summary'
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: outreachSummary
+    name: 'Outreach Summary'
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: outreach-summary
+        uriFormat: 'outreach-summary/{slug}'
+    type: channel
+  c0d6eafc-5fb9-4f1a-be6f-a46b402cba15:
+    enableVersioning: true
+    entryTypes:
+      bbe4f3b1-305e-4494-bf31-6449dde797bd:
+        fieldLayouts:
+          f832ac89-10d4-4f13-b89e-6a96dadcee5f:
+            tabs:
+              -
+                fields:
+                  eb51a21e-1ae4-46b0-a763-b2ef2213db59:
+                    required: false
+                    sortOrder: 1
+                name: navigation
+                sortOrder: 1
+        handle: navigation
+        hasTitleField: true
+        name: Navigation
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: navigation
+    name: Navigation
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'navigation/{slug}'
+    structure:
+      maxLevels: ''
+      uid: 3bacb0d4-5f13-47cf-8bef-5eead79dda9b
+    type: structure
+  d3a7f543-c67f-4883-8989-4ddac9f4d36d:
+    enableVersioning: true
+    entryTypes:
+      bceeb11f-0e58-4ae1-afaf-9dc10e5d4bc6:
+        fieldLayouts:
+          be81ab91-3a07-42bc-a8c6-de623d719bb9:
+            tabs:
+              -
+                fields:
+                  26c897de-b9b3-4a0f-a5c4-165c157c749a:
+                    required: false
+                    sortOrder: 3
+                  60cc3c9c-8876-45b3-8f53-7f0b23a1bd40:
+                    required: false
+                    sortOrder: 1
+                  87bd970a-293e-485f-8040-245e5bae9940:
+                    required: false
+                    sortOrder: 4
+                  c28563b3-6957-448c-9837-937aca6c98a6:
+                    required: false
+                    sortOrder: 2
+                name: bios
+                sortOrder: 1
+        handle: bios
+        hasTitleField: true
+        name: Bios
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: bios
+    name: Bios
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'bios/{slug}'
+    type: channel
+siteGroups:
+  94454a8e-6c36-43ae-b96a-2b4cf7a34793:
+    name: beta.beboldstreetministries.org
+sites:
+  30d0b322-17eb-4d65-b989-20892cc6e039:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: 'Be Bold Street Ministries'
+    primary: true
+    siteGroup: 94454a8e-6c36-43ae-b96a-2b4cf7a34793
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: 'Be Bold Street Ministries'
+  schemaVersion: 3.1.23
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
+volumes:
+  b85ce3f8-c917-456b-8e2d-634485951590:
+    fieldLayouts:
+      3ffb85b4-adee-4183-a29c-18c0c8df7545:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+    handle: local
+    hasUrls: true
+    name: Local
+    settings:
+      path: /var/www/craft/web/media
+    sortOrder: null
+    type: craft\volumes\Local
+    url: /media
