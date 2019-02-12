@@ -58,7 +58,8 @@ iframe#google-calendar {
 	margin-left:50px;
 	margin-top: 50px;
 	margin-bottom:30px;
-	padding:10px
+	padding:10px;
+	border: 1px solid #888;
 }
 .icon-bullet {
 	text-align: center;
