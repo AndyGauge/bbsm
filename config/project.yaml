@@ -1,8 +1,17 @@
-dateModified: 1549841926
+dateModified: 1550101488
 email:
-  fromEmail: andrew@beboldstreetministries.org
-  fromName: beta.beboldstreetministries.org
-  transportType: craft\mail\transportadapters\Sendmail
+  fromEmail: community@beboldstreetministries.org
+  fromName: 'Be Bold Street Ministries'
+  template: null
+  transportSettings:
+    encryptionMethod: tls
+    host: smtp.office365.com
+    password: $EMAIL_PASSWD
+    port: '587'
+    timeout: '10'
+    useAuthentication: '1'
+    username: community@beboldstreetministries.org
+  transportType: craft\mail\transportadapters\Smtp
 fieldGroups:
   233863fc-8aff-472a-b7e8-06e8ef1c4930:
     name: 'outreach header'
@@ -93,6 +102,18 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  480164a9-d7d0-41a2-a88f-9a041358140c:
+    contentColumnType: string
+    fieldGroup: fd9a4081-45dc-4eea-b79a-6d471bc16b9d
+    handle: linkUrl
+    instructions: ''
+    name: Link
+    searchable: true
+    settings:
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   4c003cb1-e3a3-4052-8dd8-960fd1af448f:
     contentColumnType: text
     fieldGroup: 233863fc-8aff-472a-b7e8-06e8ef1c4930
@@ -571,6 +592,17 @@ matrixBlockTypes:
     handle: outreachLinksBlock
     name: 'Outreach Links Block'
     sortOrder: 1
+plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      prependSender: '{web} '
+      prependSubject: 'New message from Be Bold Street Ministries'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: andrew@beboldstreetministries.org
 routes:
   0c6adf81-7343-469a-b5bb-dfc5ae3c34f8:
     siteUid: null
@@ -743,6 +775,26 @@ sections:
         template: calendar
         uriFormat: calendar
     type: single
+  51be046a-5508-4dc0-9a1d-1c7ee755cb3e:
+    enableVersioning: true
+    entryTypes:
+      07d31034-d49b-415f-8c97-9c4e4487b299:
+        handle: contact
+        hasTitleField: false
+        name: Contact
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: contact
+    name: Contact
+    propagateEntries: true
+    siteSettings:
+      30d0b322-17eb-4d65-b989-20892cc6e039:
+        enabledByDefault: true
+        hasUrls: true
+        template: contact
+        uriFormat: contact
+    type: single
   71a4411f-21d1-4430-a3b1-03b569ab4380:
     enableVersioning: true
     entryTypes:
@@ -885,6 +937,9 @@ sections:
             tabs:
               -
                 fields:
+                  480164a9-d7d0-41a2-a88f-9a041358140c:
+                    required: false
+                    sortOrder: 2
                   eb51a21e-1ae4-46b0-a763-b2ef2213db59:
                     required: false
                     sortOrder: 1
@@ -945,7 +1000,7 @@ sections:
       30d0b322-17eb-4d65-b989-20892cc6e039:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: individual
         uriFormat: 'bios/{slug}'
     type: channel
 siteGroups:
