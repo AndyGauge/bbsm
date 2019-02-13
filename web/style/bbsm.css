@@ -79,7 +79,10 @@ iframe#google-calendar {
 }
 .scripture-em {
 	margin-top: 50px;
-    background-color: #ccc1bb;
+    background-color: #ab7f68;
     color: #000;
     padding: 20px;
+}
+.blockquote-footer {
+	color: #444;
 }
