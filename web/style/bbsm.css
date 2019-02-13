@@ -6,7 +6,10 @@ html {
 	    border: 1px solid #d9d9db;
 	    margin-bottom: 30px;
     }
-
+.navbar-brand {
+	font-family: greatVibes;
+	font-size: 2em;
+}
 @media (min-width: 576px) {
 	.summary_border {
 		padding: 15px;
