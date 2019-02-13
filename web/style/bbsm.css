@@ -89,3 +89,7 @@ iframe#google-calendar {
 .blockquote-footer {
 	color: #444;
 }
+.giving-link a {
+    color: #fff;
+    font-size: 1.5rem;
+}
