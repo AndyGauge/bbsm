@@ -83,3 +83,6 @@ iframe#google-calendar {
     color: #000;
     padding: 20px;
 }
+.scripture-em p {
+	font-style: oblique;
+}
