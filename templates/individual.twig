@@ -1,0 +1,16 @@
+{% extends 'partial/base.html' %}
+
+
+{% block title %}Bio {{ entry["fullName"] }}{% endblock %}
+
+{% block content %}
+
+	<h3>{{ entry["fullName"] }}</h3>
+
+	<p class="lead">{{ entry["position"] }}</p>
+		<img src="{{ entry["bioPicture"].one().getUrl("bio") }}" class="img-fluid rounded-circle img-center" />
+		<p>{{ bio["testimony"] }}</p>
+		<p>{{ bio["email"] }}</p>
+		<p>{{ bio["telephone"] }}</p>
+	
+{% endblock %}
