@@ -93,3 +93,7 @@ iframe#google-calendar {
     color: #fff;
     font-size: 1.5rem;
 }
+@font-face {
+	font-family: greatVibes;
+	src: url('/style/greatvibes.ttf');
+}
