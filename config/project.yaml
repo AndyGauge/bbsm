@@ -1,4 +1,4 @@
-dateModified: 1550265448
+dateModified: 1550274115
 email:
   fromEmail: community@beboldstreetministries.org
   fromName: 'Be Bold Street Ministries'
@@ -1036,17 +1036,11 @@ users:
   requireEmailVerification: true
 volumes:
   b85ce3f8-c917-456b-8e2d-634485951590:
-    fieldLayouts:
-      3ffb85b4-adee-4183-a29c-18c0c8df7545:
-        tabs:
-          -
-            name: Content
-            sortOrder: 1
     handle: local
     hasUrls: true
     name: Local
     settings:
-      path: /var/www/craft/web/media
+      path: $ASSETS_PATH
     sortOrder: null
     type: craft\volumes\Local
     url: /media
