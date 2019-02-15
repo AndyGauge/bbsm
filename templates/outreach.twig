@@ -9,7 +9,7 @@
 		<small class="text-muted">{{ entry["outreachTitle"] }}</small>
 	</h3>
 	<p>{{ entry["outreachLead"] }}</p>
-	{% for block in entry["outreachBlocks"] %}
+	{% for block in entry["outreachBlocks"].all() %}
 		<div class="thumbnail">
 		<ul class="list-unstyled">
 			{% for image in block["picture"].all() %}

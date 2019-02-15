@@ -1,6 +1,6 @@
 {% extends 'partial/base.html' %}
 
-{% set searchFor = craft.request.getParam('q') %}
+{% set searchFor = craft.app.request.getParam('q') %}
 {% set results = craft.entries().search(searchFor).all() %}
 
 {% block title %}Results{% endblock %}

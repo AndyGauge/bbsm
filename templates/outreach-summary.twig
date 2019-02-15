@@ -12,11 +12,11 @@
 		{% if loop.index is odd	%}<div class="row">{% endif %}
 			<div class="col-sm-6">
 			<div class="summary_border">
-			{% for detail in link["outreachLink"] %}
+			{% for detail in link["outreachLink"].all() %}
 				<a href="{{ detail.getUrl() }}">
 			<p class="summary_title">	{{ detail["outreachTitle"] }}</p>
 			{% endfor %}
-			{% for picture in link["outreachLinkPicture"] %}
+			{% for picture in link["outreachLinkPicture"].all() %}
 				<img src="{{ picture.getUrl("halfThumb") }}" class="img-fluid" />
 			{%endfor %}
 			<p class="summary_caption"> {{ link["outreachLinkComment"] }}</p>	

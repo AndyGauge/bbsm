@@ -1,4 +1,4 @@
-dateModified: 1550122510
+dateModified: 1550265448
 email:
   fromEmail: community@beboldstreetministries.org
   fromName: 'Be Bold Street Ministries'
@@ -1026,7 +1026,7 @@ system:
   edition: solo
   live: true
   name: 'Be Bold Street Ministries'
-  schemaVersion: 3.1.23
+  schemaVersion: 3.1.25
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
