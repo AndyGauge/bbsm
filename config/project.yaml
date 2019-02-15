@@ -1,4 +1,4 @@
-dateModified: 1550101488
+dateModified: 1550122510
 email:
   fromEmail: community@beboldstreetministries.org
   fromName: 'Be Bold Street Ministries'
@@ -979,9 +979,15 @@ sections:
                   60cc3c9c-8876-45b3-8f53-7f0b23a1bd40:
                     required: false
                     sortOrder: 1
+                  64f20a50-895d-47a0-a3a1-3b8a82e41da8:
+                    required: false
+                    sortOrder: 5
                   87bd970a-293e-485f-8040-245e5bae9940:
                     required: false
                     sortOrder: 4
+                  b46f775d-7241-486d-95bf-0fe901ddae36:
+                    required: false
+                    sortOrder: 6
                   c28563b3-6957-448c-9837-937aca6c98a6:
                     required: false
                     sortOrder: 2
