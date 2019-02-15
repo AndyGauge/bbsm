@@ -10,7 +10,7 @@
 	<p class="lead">{{ entry["position"] }}</p>
 		<img src="{{ entry["bioPicture"].one().getUrl("bio") }}" class="img-fluid rounded-circle img-center" />
 		<p>{{ entry["testimony"] }}</p>
-		<p>{{ entry["email"] }}</p>
+		<p><a href="mailto:{{ entry["email"] }}">{{ entry["email"] }}</a></p>
 		<p>{{ entry["telephone"] }}</p>
 	
 {% endblock %}

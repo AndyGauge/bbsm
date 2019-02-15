@@ -5,7 +5,7 @@
 
 {% block content %}
 
-	<h3>Who is Be Bold Street Ministries?
+	<h3 class="centered-title">Who is Be Bold Street Ministries?
 	</h3>
 	{% for bio in entry["bios"].all() %}
 		{% if loop.index is odd %}
@@ -18,7 +18,7 @@
 		</span>
 		<img src="{{ bio["bioPicture"].one().getUrl("bio") }}" class="img-fluid rounded-circle img-center" />
 		<p>{{ bio["testimony"] }}</p>
-		<p>{{ bio["email"] }}</p>
+		<p><a href="{{ bio["email"] }}">{{ bio["email"] }}</a></p>
 		<p>{{ bio["telephone"] }}</p>
 		</div>
 		{% if loop.index is even %}
